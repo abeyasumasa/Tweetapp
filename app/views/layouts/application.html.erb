@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tweet</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+     <div>
+       <header class='header '>
+         <ul class="left_header">
+           <li><a href="/tweets">トップページ</a></li>
+        </ul>
+        <ul class="right_header clearfix">
+          <li><a href="/tweets/new">Tweet投稿</a></li>
+       </ul>
+      </header>
+      <%= yield %>
+      <footer class='footer'>
+        <p>yasumasa abe</p>
+      </footer>
+    </div>
+  </body>
+</html>
